@@ -18,9 +18,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <nav>
-        <Link to='/vite-react-router-template/' >Home</Link>
+        <Link to='/Agency/' >Home</Link>
         {" | "}
-        <Link to='/vite-react-router-template/contact' >Contact</Link>
+        <Link to='/Agency/contact' >Contact</Link>
 
       </nav>
      <Outlet></Outlet>
