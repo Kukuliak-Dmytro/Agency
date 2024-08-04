@@ -5,12 +5,13 @@ import styles from './Home.module.css'
 // importing from the src folder
  import heroBG from '/src/assets/heroBG.png'
 
+ import Header from '../../components/header/Header.tsx'
 
 export default function Home(){
     return(
         <>  
             <div style={{backgroundImage:`url(${heroBG})`}} className={styles.heroWrapper}>
-
+                <Header></Header>
             </div>
         </>
     )
