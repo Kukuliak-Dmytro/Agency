@@ -23,7 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Update npm
-        uses: npm update
+        run: npm update
 
       - name: Build project
         run: npm run build
