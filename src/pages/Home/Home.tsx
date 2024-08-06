@@ -9,8 +9,14 @@ import styles from './Home.module.css'
  import heroImgRound from '/src/assets/heroImgRound.png'
  import heroImgWaves from '/src/assets/heroImgWaves.png'
 
+ import servicesGD from '/src/assets/servicesGD.png'
+ import servicesWD from '/src/assets/servicesWD.png'
+ import servicesCW from '/src/assets/servicesCW.png'
+
+
  import {Header} from '../../components/headerComponent/headerComponent'
  import PrimaryBtn from '../../components/button/PrimaryBtn'
+ import ServiceCard from '../../components/cards/ServiceCard'
 export default function Home(){
     return(
         <>  
@@ -18,7 +24,7 @@ export default function Home(){
                 <Header></Header>
                 <div className={styles.heroBox}>
                     <div className={styles.heroText}>
-                        <h6>Let's shift your business</h6>
+                        <h6>LET'S SHIFT YOUR BUSINESS</h6>
                         <h1>Shift your business fast with Shade Pro.</h1>
                         <p>With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
                         <PrimaryBtn padding={20}>Get started a project</PrimaryBtn>
@@ -31,6 +37,18 @@ export default function Home(){
 
                     </div>
 
+                </div>
+            </div>
+
+            <div className={styles.servicesWrapper}>
+                <div className={styles.servicesBox}>
+                    <h6>OUR SERVICES</h6>
+                    <h3>We provide great services for our <br /> customers based on needs</h3>
+                    <div className={styles.cardsBox}>
+                        <ServiceCard backgroundColor='#68D585' srcPath={servicesGD}>Graphic Design</ServiceCard>
+                        <ServiceCard backgroundColor='#473BF0' srcPath={servicesWD}>Web Development</ServiceCard>
+                        <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
+                    </div>
                 </div>
             </div>
         </>
