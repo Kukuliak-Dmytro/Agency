@@ -1,4 +1,4 @@
- import styles from './Header.module.css';
+import styles from '.components/Header/Header.module.css';
 import PrimaryBtn from './components/button/PrimaryBtn'
 export function Header(){
     return(
