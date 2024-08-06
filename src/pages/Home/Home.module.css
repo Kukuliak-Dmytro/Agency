@@ -1,5 +1,49 @@
-
-.heroWrapper{
+.heroWrapper {
     width: 100%;
     height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBox {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.heroBox .heroImg img {
+    height: 110px;
+    width: auto;
+    position: absolute;
+
+    &:nth-child(1) {
+        height: 463px;
+        width: 463px;
+        position: relative;
+        z-index: 5;
+    }
+
+    &:nth-child(2) {
+        top: -8%;
+        left: 20%;
+        z-index: 4;
+    }
+
+    &:nth-child(3) {
+        z-index: 6;
+        left: 0%;
+        bottom: 10%;
+
+    }
+
+    &:nth-child(4) {
+        z-index: 6;
+        right: 10%;
+        bottom: 10%;
+        height: 80px;
+    }
 }

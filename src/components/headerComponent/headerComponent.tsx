@@ -4,7 +4,9 @@ export function Header(){
     return(
     <div className={styles.headerWrapper}>
         <div className={styles.leftPartHeader}>
-            <h1>Brainwave.io</h1>
+            <a href="">
+                <h1>Brainwave.io</h1>
+            </a>
             <ul>
                 <a href="#">
                     <li>Demos</li>
