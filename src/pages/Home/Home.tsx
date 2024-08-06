@@ -5,7 +5,7 @@ import styles from './Home.module.css'
 // importing from the src folder
  import heroBG from '/src/assets/heroBG.png'
 
- import Header from '../../components/Header/header'
+ import {Header} from '../../header'
 
 export default function Home(){
     return(

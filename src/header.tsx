@@ -1,6 +1,6 @@
-import styles from './Header.module.css';
-import PrimaryBtn from '../button/PrimaryBtn'
-export default function Header(){
+// import styles from './Header.module.css';
+import PrimaryBtn from './components/button/PrimaryBtn'
+export function Header(){
     return(
     <div className={styles.headerWrapper}>
         <div className={styles.leftPartHeader}>
