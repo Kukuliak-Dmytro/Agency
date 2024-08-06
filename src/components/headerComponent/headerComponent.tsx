@@ -2,8 +2,8 @@
 import PrimaryBtn from '../button/PrimaryBtn'
 export function Header(){
     return(
-    <div >
-        <div  className={styles.headerWrapper}>
+    <div className={styles.headerWrapper}>
+        <div className={styles.leftPartHeader}>
             <h1>Brainwave.io</h1>
             <ul>
                 <a href="#">
@@ -20,7 +20,7 @@ export function Header(){
                 </a>
             </ul>
         </div>
-        <div>
+        <div className={styles.rightPartHeader}>
             <PrimaryBtn>Get Started a project</PrimaryBtn>
         </div>
 
