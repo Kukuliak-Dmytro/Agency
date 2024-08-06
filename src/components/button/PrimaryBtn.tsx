@@ -3,12 +3,13 @@ import React from 'react';
 import styles from './button.module.css';
 
 interface PrimaryBtnProps {
-    children: string;
+    children: string,
+    padding?: number;
 }
 
-const PrimaryBtn: React.FC<PrimaryBtnProps> = ({ children }) => {
+const PrimaryBtn: React.FC<PrimaryBtnProps> = ({ children, padding=10 }) => {
     return (
-        <a href="#" className={styles.primaryBtn}>
+        <a href="#" className={styles.primaryBtn} style={{padding:`${padding}px `}}>
             {children}
         </a>
     );

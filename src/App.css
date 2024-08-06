@@ -4,4 +4,7 @@
   box-sizing: border-box;
   font-family: Montserrat;
   --primaryFontColor: #161C2D;
+  --secondaryFontColor:rgba(22, 28, 45, 0.6);
+  --lightFontColor:#ffffff;
+  --accentFontColor:#F64B4B;
 }
