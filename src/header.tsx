@@ -1,9 +1,9 @@
-// import styles from './components/Header/Header.module.css';
+ import styles from './components/Header/Header.module.css';
 import PrimaryBtn from './components/button/PrimaryBtn'
 export function Header(){
     return(
     <div >
-        <div >
+        <div  className={styles.headerWrapper}>
             <h1>Brainwave.io</h1>
             <ul>
                 <a href="#">
