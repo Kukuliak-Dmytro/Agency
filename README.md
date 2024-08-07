@@ -9,5 +9,5 @@ Currently, two official plugins are available:
 
 # Author
 
-I made this for myself by folliwing https://github.com/ErickKS/vite-react-router. Shout out to Erick!
-You can fork the repo, but I don`t guarantee that it will work fine. If you encounter any issues, head to the original repo made by Erick and follow his tutorial.
+This repository is created from a template.
+The original design is available at https://www.figma.com/design/aecuQzcaY0whDnUJVAytO0/Brainwave.io---Landing-Page-UI-Kit---Saas-Landing-Page---Creative-App-Landing-Page-(Community)?node-id=0-2555&t=MXJBnwZV4iwZ1ScX-0
