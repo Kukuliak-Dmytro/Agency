@@ -21,6 +21,7 @@ import styles from './Home.module.css'
  import {Header} from '../../components/headerComponent/headerComponent'
  import PrimaryBtn from '../../components/button/PrimaryBtn'
  import ServiceCard from '../../components/cards/ServiceCard'
+ import FadeOnScroll from '../../components/animations/FadeOnScroll'
 export default function Home(){
     return(
         <>  
@@ -43,29 +44,38 @@ export default function Home(){
 
                 </div>
             </div>
-            <div className={styles.servicesWrapper}>
-                <div className={styles.servicesBox}>
-                    <h6>OUR SERVICES</h6>
-                    <h3>We provide great services for our <br /> customers based on needs</h3>
-                    <div className={styles.cardsBox}>
-                        <ServiceCard backgroundColor='#68D585' srcPath={servicesGD}>Graphic Design</ServiceCard>
-                        <ServiceCard backgroundColor='#473BF0' srcPath={servicesWD}>Web Development</ServiceCard>
-                        <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
+            <FadeOnScroll>
+                <div className={styles.servicesWrapper}>
+                    <div className={styles.servicesBox}>
+                        <h6>OUR SERVICES</h6>
+                        <h3>We provide great services for our <br /> customers based on needs</h3>
+                        <div className={styles.cardsBox}>
+                
+                                <ServiceCard backgroundColor='#68D585' srcPath={servicesGD}>Graphic Design</ServiceCard>
+                
+                                <ServiceCard backgroundColor='#473BF0' srcPath={servicesWD}>Web Development</ServiceCard>
+                
+                                <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
+                
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.testimonialWrapper}>
-                <div className={styles.testimonialBox}>
-                    <div className={styles.testimonialImg}>
-                        <img src={testimonialAvatar} alt="Frankling Hick`s face"  />
-                    </div>
-                    <div className={styles.testimonialText}>
-                        <img src={testimonialStars} alt="five stars rating" />
-                        <h2>“OMG! I cannot believe that I have got a brand new landing page after getting Albino. It was super easy to edit and publish.”</h2>
-                        <div><span>Franklin Hicks</span> <span>Web Developer</span></div>
+            </FadeOnScroll>
+            <FadeOnScroll>
+                <div className={styles.testimonialWrapper}>
+                    <div className={styles.testimonialBox}>
+                        <div className={styles.testimonialImg}>
+                            <img src={testimonialAvatar} alt="Frankling Hick`s face"  />
+                        </div>
+                        <div className={styles.testimonialText}>
+                            <img src={testimonialStars} alt="five stars rating" />
+                            <h2>“OMG! I cannot believe that I have got a brand new landing page after getting Albino. It was super easy to edit and publish.”</h2>
+                            <div><span>Franklin Hicks</span> <span>Web Developer</span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </FadeOnScroll>
+           
         </>
     )
 }
