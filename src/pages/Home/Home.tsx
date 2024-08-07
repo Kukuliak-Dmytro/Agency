@@ -13,6 +13,10 @@ import styles from './Home.module.css'
  import servicesWD from '/src/assets/servicesWD.png'
  import servicesCW from '/src/assets/servicesCW.png'
 
+ import testimonialAvatar from '/src/assets/testimonialAvatar.png'
+ import testimonialStars from '/src/assets/testimonialStars.png'
+
+
 
  import {Header} from '../../components/headerComponent/headerComponent'
  import PrimaryBtn from '../../components/button/PrimaryBtn'
@@ -39,7 +43,6 @@ export default function Home(){
 
                 </div>
             </div>
-
             <div className={styles.servicesWrapper}>
                 <div className={styles.servicesBox}>
                     <h6>OUR SERVICES</h6>
@@ -48,6 +51,18 @@ export default function Home(){
                         <ServiceCard backgroundColor='#68D585' srcPath={servicesGD}>Graphic Design</ServiceCard>
                         <ServiceCard backgroundColor='#473BF0' srcPath={servicesWD}>Web Development</ServiceCard>
                         <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.testimonialWrapper}>
+                <div className={styles.testimonialBox}>
+                    <div className={styles.testimonialImg}>
+                        <img src={testimonialAvatar} alt="Frankling Hick`s face"  />
+                    </div>
+                    <div className={styles.testimonialText}>
+                        <img src={testimonialStars} alt="five stars rating" />
+                        <h2>“OMG! I cannot believe that I have got a brand new landing page after getting Albino. It was super easy to edit and publish.”</h2>
+                        <div><span>Franklin Hicks</span> <span>Web Developer</span></div>
                     </div>
                 </div>
             </div>
