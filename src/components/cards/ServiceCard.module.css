@@ -28,6 +28,8 @@
         font-weight: 300;
         font-size: 17px;
         padding-bottom: 30px;
+          letter-spacing: -0.2px;
+
     }
     h5 a{
         color: var(--lightFontColor);

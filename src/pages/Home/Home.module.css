@@ -36,11 +36,10 @@ h6 {
         font-size: 19px;
         color: var(--secondaryFontColor);
         padding-bottom: 40px;
+        width: 500px;
 
     }
 }
-
-
 
 .heroImg {
     position: relative;
@@ -106,9 +105,9 @@ h6 {
 .testimonialWrapper {
     width: 100%;
     height: 300px;
-    margin-bottom: 500px;
     display: flex;
     justify-content: center;
+    margin-bottom: 150px;
 
     .testimonialBox {
         width: 75%;
@@ -149,4 +148,65 @@ h6 {
     }
 
 
+}
+
+.aboutWrapper{
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+    /* align-items: top; */
+    position: relative;
+    .aboutBox{
+        width: 75%;
+        height: 883px;
+        position: relative;
+        *{
+            position: absolute;
+        }
+        h6{
+            left: 0;
+            top:0;
+        }
+        span:nth-of-type(1){
+            left: 0;
+            top:10%;
+            font-size: 36px;
+            width: 516px;
+            line-height: 1.25;
+        }
+        span:nth-of-type(2){
+            left: 50%;
+            bottom: 25%;
+            width: 490px;
+            line-height: calc(29/17);
+            font-size: 17px;
+        }
+        img:nth-of-type(1){
+            width: 445px;
+            height: 565px;
+            left: 0;
+            bottom: 0;
+        }
+        img:nth-of-type(2){
+            width: 318px;
+            height: 332px;
+            left: 50%;
+            top: 25%;
+        }
+        img:nth-of-type(3){
+            right: 0;
+            top: 45%;
+            width: 160px;
+            height: 167px;
+        }
+        img:nth-of-type(4){
+            width: 107px;
+            height: 110px;
+            left: 50%;
+            top: 25%;
+            transform: translate(calc(318px - 50%), -50%);
+        }
+    }
+    
 }
