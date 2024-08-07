@@ -94,8 +94,26 @@ export default function Home() {
                         <img src={aboutDecoration} alt="" />
 
                     </div>
+
                 </div>
             </FadeOnScroll>
+            <div className={styles.factsWrapper}>
+                <div className={styles.allFactsBox}>
+                    <div className={styles.factBox}>
+                        <span><h1>1M+</h1></span>
+                        <span><p>Customers visit Omega every month to get their service done.</p></span>
+                    </div>
+                    <div className={styles.factBox}>
+                        <span><h1>92%</h1></span>
+                        <span><p>Satisfaction rate comes from our awesome customers.</p></span>
+                    </div>
+                    <div className={styles.factBox}>
+                        <span><h1>4.9/5.0</h1></span>
+                        <span><p>Average customer ratings we have got all over internet.</p></span>
+                    </div>
+
+                </div>
+            </div>
 
         </>
     )

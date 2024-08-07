@@ -152,7 +152,7 @@ h6 {
 
 .aboutWrapper{
     width: 100%;
-    height: 1400px;
+    height: max-content;
     display: flex;
     justify-content: center;
     /* align-items: top; */
@@ -181,6 +181,7 @@ h6 {
             width: 490px;
             line-height: calc(29/17);
             font-size: 17px;
+            color: var(--secondaryFontColor);
         }
         img:nth-of-type(1){
             width: 445px;
@@ -209,4 +210,29 @@ h6 {
         }
     }
     
+}
+.factsWrapper{
+    margin-top: 75px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .allFactsBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        text-align: center;
+        .factBox{
+            width: 314px;
+            padding: 50px;
+            span h1{
+                font-size: 48px;
+            }
+            span p{
+                color: var(--secondaryFontColor);
+            }
+        }
+    }
 }
