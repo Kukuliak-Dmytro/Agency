@@ -31,6 +31,11 @@ import workImg2 from '/src/assets/works2.png'
 import workImg3 from '/src/assets/works3.png'
 import workImg4 from '/src/assets/works4.png'
 
+import testimonialBG from '/src/assets/testimonialBG.png'
+import testimonialAvatar2 from '/src/assets/testimonialAvatar2.png'
+
+
+
 import { Header } from '../../components/headerComponent/headerComponent'
 import PrimaryBtn from '../../components/button/PrimaryBtn'
 import ServiceCard from '../../components/cards/ServiceCard'
@@ -182,6 +187,17 @@ export default function Home() {
                     </SlideRightOnScroll>
                 </div>
             </div>
+            <FadeOnScroll>
+                <div className={styles.testimonialWrapper2} style={{backgroundImage:`url(${testimonialBG})`}}>
+                    <div className={styles.testimonialBox2}>
+                        <span>TESTIMONIAL</span>
+                        <h3>“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”</h3>
+                        <img src={testimonialAvatar2} alt="" />
+                        <h5>Ian Klein</h5>
+                        <p>Digital Marketer</p>
+                    </div>
+                </div>
+            </FadeOnScroll>
 
 
         </>
