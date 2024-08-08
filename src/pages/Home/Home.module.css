@@ -6,7 +6,7 @@
     align-items: center;
 
     .heroBox {
-        width: 80%;
+        width: 75%;
         height: max-content;
         display: flex;
         justify-content: center;
@@ -78,7 +78,7 @@
 
     .servicesBox {
         height: 750px;
-        width: 80%;
+        width: 75%;
 
         h3 {
             font-size: 36px;
@@ -245,8 +245,9 @@
     padding-top: 100px;
     display: flex;
     justify-content: center;
+
     h6 {
-    text-align: center  ;
+        text-align: center;
 
     }
 
@@ -273,6 +274,58 @@
 
             border-bottom: 2px solid #E7E9ED;
 
+        }
+    }
+}
+
+.worksWrapper {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    .worksBox {
+        width: 75%;
+        height: max-content;
+        text-align: center;
+
+        h2 {
+            width: 600px;
+            margin: auto;
+        }
+
+        .worksGroup {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding-top: 100px;
+
+            div {
+                align-items: center;
+                /* new */
+                justify-items: center;
+                /* new */
+
+            }
+        }
+        a {
+            text-decoration: none;
+            transition: cubic-bezier(0, 2.05, 1, 0.99);
+            transition: 0.5s;
+
+            
+            h5 {
+                color: #473BF0;
+                transition: 0.5s;
+
+            }
+            :hover{
+                color: var(--primaryFontColor);
+                transform: translateX(0.5rem);
+              
+            }
         }
     }
 }

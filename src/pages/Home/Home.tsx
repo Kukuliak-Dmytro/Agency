@@ -26,12 +26,19 @@ import featuresIcon2 from '/src/assets/featuresIcon2.png'
 import featuresIcon3 from '/src/assets/featuresIcon3.png'
 import featuresIcon4 from '/src/assets/featuresIcon4.png'
 
+import workImg1 from '/src/assets/works1.png'
+import workImg2 from '/src/assets/works2.png'
+import workImg3 from '/src/assets/works3.png'
+import workImg4 from '/src/assets/works4.png'
+
 import { Header } from '../../components/headerComponent/headerComponent'
 import PrimaryBtn from '../../components/button/PrimaryBtn'
 import ServiceCard from '../../components/cards/ServiceCard'
 import FadeOnScroll from '../../components/animations/FadeOnScroll'
 import FeatureCard from '../../components/cards/FeatureCard'
 import GetStartedComponent from '../../components/GetStartedComponent/GetStartedComponent'
+import WorkCard from '../../components/cards/WorkCard'
+import SlideRightOnScroll from '../../components/animations/SlideRightOnSroll'
 export default function Home() {
     return (
         <>
@@ -54,23 +61,28 @@ export default function Home() {
 
                 </div>
             </div>
-            <FadeOnScroll>
+           
                 <div className={styles.servicesWrapper}>
                     <div className={styles.servicesBox}>
                         <h6>OUR SERVICES</h6>
                         <h3>We provide great services for our <br /> customers based on needs</h3>
                         <div className={styles.cardsBox}>
+                            <SlideRightOnScroll delay={0.3}>
+                                <ServiceCard backgroundColor='#68D585' srcPath={servicesGD}>Graphic Design</ServiceCard>
+                            </SlideRightOnScroll>
 
-                            <ServiceCard backgroundColor='#68D585' srcPath={servicesGD}>Graphic Design</ServiceCard>
+                            <SlideRightOnScroll delay={0.6}>
+                                <ServiceCard backgroundColor='#473BF0' srcPath={servicesWD}>Web Development</ServiceCard>
+                            </SlideRightOnScroll>
 
-                            <ServiceCard backgroundColor='#473BF0' srcPath={servicesWD}>Web Development</ServiceCard>
-
-                            <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
+                            <SlideRightOnScroll delay={0.9}>
+                                <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
+                            </SlideRightOnScroll>
 
                         </div>
                     </div>
                 </div>
-            </FadeOnScroll>
+            
             <FadeOnScroll>
                 <div className={styles.testimonialWrapper}>
                     <div className={styles.testimonialBox}>
@@ -122,27 +134,55 @@ export default function Home() {
                     </div>
                 </div>
             </FadeOnScroll>
-          
-                <div className={styles.featuresWrapper}>
-                    <div className={styles.featuresBox}>
-                            <FadeOnScroll>
-                                <h6>WHY CHOOSE US</h6>
-                                <span>
-                                    <h2>People choose us because we serve the best for everyone</h2>
-                                </span>
-                            </FadeOnScroll>
-                            <FadeOnScroll>
-                                <div className={styles.featuresGroup}>
-                                        <FeatureCard heading='Dedicated project manager' srcPath={featuresIcon1}></FeatureCard>
-                                        <FeatureCard heading='Organized tasks'srcPath={featuresIcon2}></FeatureCard>
-                                        <FeatureCard heading='Easy feedback sharing'srcPath={featuresIcon3}></FeatureCard>
-                                        <FeatureCard heading='Never miss deadline' srcPath={featuresIcon4}></FeatureCard>
-                                </div>
-                            </FadeOnScroll>
-                            <FadeOnScroll><GetStartedComponent/></FadeOnScroll>
-                    </div>
+
+            <div className={styles.featuresWrapper}>
+                <div className={styles.featuresBox}>
+                    <FadeOnScroll>
+                        <h6>WHY CHOOSE US</h6>
+                        <span>
+                            <h2>People choose us because we serve the best for everyone</h2>
+                        </span>
+                    </FadeOnScroll>
+                    <FadeOnScroll>
+                        <div className={styles.featuresGroup}>
+                            <FeatureCard heading='Dedicated project manager' srcPath={featuresIcon1}></FeatureCard>
+                            <FeatureCard heading='Organized tasks' srcPath={featuresIcon2}></FeatureCard>
+                            <FeatureCard heading='Easy feedback sharing' srcPath={featuresIcon3}></FeatureCard>
+                            <FeatureCard heading='Never miss deadline' srcPath={featuresIcon4}></FeatureCard>
+                        </div>
+                    </FadeOnScroll>
+                    <FadeOnScroll><GetStartedComponent /></FadeOnScroll>
                 </div>
-            
+            </div>
+            <div className={styles.worksWrapper}>
+                <div className={styles.worksBox}>
+                    <FadeOnScroll>
+                        <h6>CASE STUDIES</h6>
+                    </FadeOnScroll>
+                    <FadeOnScroll>
+                        <h2>Our works describe why we are the best in the business</h2>
+                    </FadeOnScroll>
+                    <FadeOnScroll>
+                        <div className={styles.worksGroup}>
+
+                            <div>
+                                <WorkCard srcPath={workImg1} workName="Aura Branding Design" category="Graphic Design" ></WorkCard>
+                                <WorkCard srcPath={workImg3} workName="Gradient Website Development" category="Web Development"></WorkCard>
+                            </div>
+                            <div>
+                                <WorkCard srcPath={workImg2} workName="AB.S Snack Packaging" category="Graphic Design"></WorkCard>
+                                <WorkCard srcPath={workImg4} workName="Magazine Content Writing" category="Content Writing"></WorkCard>
+                            </div>
+                        </div>
+                    </FadeOnScroll>
+                    <SlideRightOnScroll >
+                        <a href="#">
+                            <h5>See all works &#8594;</h5>
+                        </a>
+                    </SlideRightOnScroll>
+                </div>
+            </div>
+
 
         </>
     )

@@ -1,0 +1,20 @@
+.cardWrapper{
+    width: 100%;
+    text-align: left;
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    p{
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-bottom: 10px;
+
+    }
+    h4{
+        padding-bottom: 50px;
+        padding-left: 40px;
+
+    }
+
+}

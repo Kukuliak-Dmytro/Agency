@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:var(--lightFontColor);
     transition-delay: 0.15s;
     transition: cubic-bezier(0, 2.05, 1, 0.99);
     transition-duration: 0.5s;
@@ -23,6 +22,8 @@
         font-weight: 600;
         padding-top: 50px;
         padding-bottom: 20px;
+        color:var(--lightFontColor);
+
     }
     p{
         font-weight: 300;
