@@ -21,10 +21,17 @@ import aboutImg2 from '/src/assets/about2.png'
 import aboutImg3 from '/src/assets/about3.png'
 import aboutDecoration from '/src/assets/aboutDecoration.png'
 
+import featuresIcon1 from '/src/assets/featuresIcon1.png'
+import featuresIcon2 from '/src/assets/featuresIcon2.png'
+import featuresIcon3 from '/src/assets/featuresIcon3.png'
+import featuresIcon4 from '/src/assets/featuresIcon4.png'
+
 import { Header } from '../../components/headerComponent/headerComponent'
 import PrimaryBtn from '../../components/button/PrimaryBtn'
 import ServiceCard from '../../components/cards/ServiceCard'
 import FadeOnScroll from '../../components/animations/FadeOnScroll'
+import FeatureCard from '../../components/cards/FeatureCard'
+import GetStartedComponent from '../../components/GetStartedComponent/GetStartedComponent'
 export default function Home() {
     return (
         <>
@@ -97,23 +104,45 @@ export default function Home() {
 
                 </div>
             </FadeOnScroll>
-            <div className={styles.factsWrapper}>
-                <div className={styles.allFactsBox}>
-                    <div className={styles.factBox}>
-                        <span><h1>1M+</h1></span>
-                        <span><p>Customers visit Omega every month to get their service done.</p></span>
+            <FadeOnScroll>
+                <div className={styles.factsWrapper}>
+                    <div className={styles.allFactsBox}>
+                        <div className={styles.factBox}>
+                            <span><h1>1M+</h1></span>
+                            <span><p>Customers visit Omega every month to get their service done.</p></span>
+                        </div>
+                        <div className={styles.factBox}>
+                            <span><h1>92%</h1></span>
+                            <span><p>Satisfaction rate comes from our awesome customers.</p></span>
+                        </div>
+                        <div className={styles.factBox}>
+                            <span><h1>4.9/5.0</h1></span>
+                            <span><p>Average customer ratings we have got all over internet.</p></span>
+                        </div>
                     </div>
-                    <div className={styles.factBox}>
-                        <span><h1>92%</h1></span>
-                        <span><p>Satisfaction rate comes from our awesome customers.</p></span>
-                    </div>
-                    <div className={styles.factBox}>
-                        <span><h1>4.9/5.0</h1></span>
-                        <span><p>Average customer ratings we have got all over internet.</p></span>
-                    </div>
-
                 </div>
-            </div>
+            </FadeOnScroll>
+          
+                <div className={styles.featuresWrapper}>
+                    <div className={styles.featuresBox}>
+                            <FadeOnScroll>
+                                <h6>WHY CHOOSE US</h6>
+                                <span>
+                                    <h2>People choose us because we serve the best for everyone</h2>
+                                </span>
+                            </FadeOnScroll>
+                            <FadeOnScroll>
+                                <div className={styles.featuresGroup}>
+                                        <FeatureCard heading='Dedicated project manager' srcPath={featuresIcon1}></FeatureCard>
+                                        <FeatureCard heading='Organized tasks'srcPath={featuresIcon2}></FeatureCard>
+                                        <FeatureCard heading='Easy feedback sharing'srcPath={featuresIcon3}></FeatureCard>
+                                        <FeatureCard heading='Never miss deadline' srcPath={featuresIcon4}></FeatureCard>
+                                </div>
+                            </FadeOnScroll>
+                            <FadeOnScroll><GetStartedComponent/></FadeOnScroll>
+                    </div>
+                </div>
+            
 
         </>
     )

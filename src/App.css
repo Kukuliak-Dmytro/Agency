@@ -9,3 +9,37 @@
   --accentFontColor:#F64B4B;
 
 }
+
+h1{
+  font-size: 48px;
+  color: var(--primaryFontColor);
+}
+h2{
+  font-size: 36px;
+  color: var(--primaryFontColor);
+
+}
+h3{
+  font-size: 32px;
+  color: var(--primaryFontColor);
+
+}
+h4{
+  font-size: 24px;
+  color: var(--primaryFontColor);
+
+}
+h5{
+  font-size: 21px;
+  color: var(--primaryFontColor);
+
+}
+h6 {
+  color: var(--accentFontColor);
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+p{
+  font-size: 19px;
+  color: var(--secondaryFontColor);
+}
