@@ -44,6 +44,7 @@ import FeatureCard from '../../components/cards/FeatureCard'
 import GetStartedComponent from '../../components/GetStartedComponent/GetStartedComponent'
 import WorkCard from '../../components/cards/WorkCard'
 import SlideRightOnScroll from '../../components/animations/SlideRightOnSroll'
+import Footer from '../../components/footerComponent/footerComponent'
 export default function Home() {
     return (
         <>
@@ -198,6 +199,7 @@ export default function Home() {
                     </div>
                 </div>
             </FadeOnScroll>
+            <Footer></Footer>
 
 
         </>
