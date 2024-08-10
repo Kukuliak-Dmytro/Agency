@@ -188,11 +188,11 @@ export default function Home() {
                     <FadeOnScroll>
                         <div className={styles.worksGroup}>
 
-                            <div>
+                            <div className={styles.firstChild}>
                                 <WorkCard srcPath={workImg1} workName="Aura Branding Design" category="Graphic Design" ></WorkCard>
                                 <WorkCard srcPath={workImg3} workName="Gradient Website Development" category="Web Development"></WorkCard>
                             </div>
-                            <div>
+                            <div className={styles.secondChild}>
                                 <WorkCard srcPath={workImg2} workName="AB.S Snack Packaging" category="Graphic Design"></WorkCard>
                                 <WorkCard srcPath={workImg4} workName="Magazine Content Writing" category="Content Writing"></WorkCard>
                             </div>

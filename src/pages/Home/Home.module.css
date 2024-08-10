@@ -5,6 +5,11 @@
     justify-content: center;
     align-items: center;
     padding-top: 70px;
+    @media (max-width:769px) {
+        min-height: 100vh;
+        padding-top: 30px;
+
+    }
 
     .heroBox {
         width: 75%;
@@ -37,7 +42,6 @@
 
             div:nth-of-type(1) {
                 flex: 1;
-
                 h6 {
                     @media(max-width:769px) {
                         transform: translate(111%, 125%);
@@ -50,7 +54,6 @@
 
                 h1 {
                     font-size: 60px;
-
                     @media (max-width: 992px) {
                         font-size: 48px;
 
@@ -59,7 +62,7 @@
 
                             @media (max-width:576px) {
                                 width: 80%;
-                                padding-bottom: 50px;
+                                padding-bottom: 30px;
                             }
                         }
                     }
@@ -177,10 +180,13 @@
         margin-top: 40px;
         overflow-y: hidden;
         overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+
 
         @media (max-width:769px) {
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
         }
 
         >* {
@@ -430,10 +436,11 @@
 
     .featuresBox {
         width: 75%;
-        height: 1000px;
+        height: max-content;
         display: flex;
         /* justify-content: center; */
         flex-direction: column;
+        padding-bottom: 50px;
         align-items: center;
 
         span h2 {
@@ -488,7 +495,6 @@
         text-align: center;
 
         h2 {
-            width: 600px;
             margin: auto;
         }
 
@@ -498,12 +504,17 @@
             gap: 50px;
             padding-top: 100px;
 
-            div {
-                align-items: center;
-                /* new */
-                justify-items: center;
-                /* new */
+            @media (max-width:769px) {
+                display: block;
+                .firstChild{
+                    display: none;
+                }
+            }
 
+
+            .firstChild, .secondChild {
+                align-items: center;
+                justify-items: center;
             }
         }
 
@@ -538,7 +549,13 @@
         text-align: center;
         width: 50%;
         margin: auto;
-        transform: translateY(30%);
+        padding-top: 50px;
+       
+
+        @media(max-width:769px) {
+            transform: translateY(0);
+            width: 90%;
+        }
 
         span {
             color: #68D585;
@@ -549,6 +566,10 @@
         h3 {
             color: var(--lightFontColor);
             padding: 40px 0;
+
+            @media(max-width:769px) {
+                font-size: 24px;
+            }
         }
 
         img {
