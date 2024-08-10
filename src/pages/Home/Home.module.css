@@ -13,10 +13,10 @@
         justify-content: center;
         align-items: center;
 
-        @media(max-width:768px) {
+        @media(max-width:769px) {
             flex-direction: column;
             width: 80%;
-            padding-top: 75px;
+            padding-top: 50px;
 
         }
 
@@ -26,9 +26,10 @@
             flex-direction: column;
             flex: 1;
 
-            @media(max-width:768px) {
+            @media(max-width:769px) {
                 flex-direction: row;
                 padding-bottom: 75px;
+
                 @media (max-width:576px) {
                     flex-direction: column;
                 }
@@ -38,8 +39,11 @@
                 flex: 1;
 
                 h6 {
-                    @media (max-width: 576px) {
-                        display: none;
+                    @media(max-width:769px) {
+                        transform: translate(111%, 125%);
+                        @media (max-width: 576px) {
+                            display: none;
+                        }
                     }
                 }
 
@@ -49,9 +53,10 @@
                     @media (max-width: 992px) {
                         font-size: 48px;
 
-                        @media (max-width: 768px) {
+                        @media (max-width: 769px) {
                             font-size: 36px;
-                            @media (max-width:576px){
+
+                            @media (max-width:576px) {
                                 width: 80%;
                                 padding-bottom: 50px;
                             }
@@ -64,17 +69,19 @@
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-               @media (min-width:576px) and (max-width:768px){
-                justify-content: end;
-                align-items: center;
-               }
+
+                @media (min-width:576px) and (max-width:769px) {
+                    justify-content: end;
+                    align-items: center;
+                }
+
                 p {
                     font-size: 19px;
                     color: var(--secondaryFontColor);
                     padding-bottom: 40px;
                     width: 500px;
 
-                    @media (max-width:768px) {
+                    @media (max-width:769px) {
                         display: none;
 
 
@@ -145,20 +152,37 @@
 
     .servicesBox {
         height: 750px;
-        width: 75%;
+        width: 75vw;
+        @media (min-width:769px)and (max-width:992px) {
+            width: 90%;
+        }
 
         h3 {
             font-size: 36px;
+
+            @media(max-width: 769px) {
+                font-size: 27px;
+            }
         }
     }
 
     .cardsBox {
+        height: 560px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 100px;
+        align-items: center;
+        margin-top: 40px;
+        overflow-y: hidden;
+   
+        @media (max-width:769px) {
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
 
-        @media (max-width:768px) {
-            overflow-x: auto;
+        >* {
+            scroll-snap-align: center;
+            margin: 10px;
         }
     }
 }
@@ -254,7 +278,7 @@
             font-size: 17px;
             color: var(--secondaryFontColor);
 
-            @media (max-width:768px) {
+            @media (max-width:769px) {
                 left: 0;
             }
         }

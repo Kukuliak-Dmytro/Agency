@@ -73,7 +73,7 @@ export default function Home() {
                 </div>
             </div>
            
-                {/* <div className={styles.servicesWrapper}>
+                <div className={styles.servicesWrapper}>
                     <div className={styles.servicesBox}>
                         <h6>OUR SERVICES</h6>
                         <h3>We provide great services for our <br /> customers based on needs</h3>
@@ -89,12 +89,13 @@ export default function Home() {
                             <SlideRightOnScroll delay={0.9}>
                                 <ServiceCard backgroundColor='#FF7171' srcPath={servicesCW}>Content Writing</ServiceCard>
                             </SlideRightOnScroll>
+                            
 
                         </div>
                     </div>
                 </div>
             
-            <FadeOnScroll>
+            {/* <FadeOnScroll>
                 <div className={styles.testimonialWrapper}>
                     <div className={styles.testimonialBox}>
                         <div className={styles.testimonialImg}>
