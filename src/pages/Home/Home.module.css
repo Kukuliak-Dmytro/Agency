@@ -41,6 +41,7 @@
                 h6 {
                     @media(max-width:769px) {
                         transform: translate(111%, 125%);
+
                         @media (max-width: 576px) {
                             display: none;
                         }
@@ -153,6 +154,7 @@
     .servicesBox {
         height: 750px;
         width: 75vw;
+
         @media (min-width:769px)and (max-width:992px) {
             width: 90%;
         }
@@ -174,7 +176,8 @@
         align-items: center;
         margin-top: 40px;
         overflow-y: hidden;
-   
+        overflow-x: hidden;
+
         @media (max-width:769px) {
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
@@ -182,7 +185,7 @@
 
         >* {
             scroll-snap-align: center;
-            margin: 10px;
+            margin: 5px;
         }
     }
 }
@@ -196,15 +199,26 @@
 
     .testimonialBox {
         width: 80%;
-        height: 300px;
+        height: max-content;
         padding-top: 20px;
         display: flex;
         border-bottom: 2px solid #E7E9ED;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 150px;
+
+        @media(max-width:769px) {
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 30px;
+
+        }
 
         .testimonialImg {
             flex: 2;
             display: flex;
             justify-content: center;
+
 
             img {
                 width: 164px;
@@ -223,9 +237,14 @@
             h2 {
                 font-size: 24px;
                 padding: 25px 30px 25px 0px;
+
+                @media (max-width:576px) {
+                    font-size: 18px;
+                }
             }
 
             div {
+
                 display: flex;
                 justify-content: space-between;
                 padding-right: 50px;
@@ -242,24 +261,43 @@
 
 .aboutWrapper {
     width: 100%;
-    height: max-content;
     display: flex;
     justify-content: center;
-    /* align-items: top; */
     position: relative;
 
     .aboutBox {
         width: 80%;
-        height: 883px;
+        height: 833px;
         position: relative;
 
-        * {
-            position: absolute;
+        @media(max-width:769px) {
+            text-align: center;
+            height: max-content;
+
+            img {
+                display: none;
+            }
+
+            h4 {
+                padding-bottom: 25px;
+            }
+
+            p {
+                display: none
+            }
+
         }
+
+        @media (min-width:769px) {
+            * {
+                position: absolute;
+            }
+        }
+
 
         h6 {
             left: 0;
-            top: 0;
+            top: 5%;
         }
 
         span:nth-of-type(1) {
@@ -288,6 +326,10 @@
             height: 565px;
             left: 0;
             bottom: 0;
+
+            @media (min-width:769px) and (max-width: 992px) {
+                display: none;
+            }
         }
 
         img:nth-of-type(2) {
@@ -295,6 +337,11 @@
             height: 332px;
             left: 50%;
             top: 25%;
+
+            @media (min-width:769px) and (max-width: 992px) {
+                left: 0;
+                top: 40%;
+            }
         }
 
         img:nth-of-type(3) {
@@ -302,6 +349,11 @@
             top: 45%;
             width: 160px;
             height: 167px;
+
+            @media (min-width:769px) and (max-width: 992px) {
+                right: 10%;
+                top: 45%;
+            }
         }
 
         img:nth-of-type(4) {
@@ -310,13 +362,17 @@
             left: 50%;
             top: 25%;
             transform: translate(calc(318px - 50%), -50%);
+
+            @media (min-width:769px) and (max-width: 992px) {
+                top: 45%;
+            }
         }
     }
 
 }
 
 .factsWrapper {
-    margin-top: 75px;
+    margin-top: 25px;
     width: 100%;
     height: max-content;
     display: flex;
@@ -330,9 +386,25 @@
         width: 80%;
         text-align: center;
 
+        @media (max-width:769px) {
+            flex-direction: column;
+        }
+
         .factBox {
             width: 314px;
             padding: 40px;
+
+            @media(max-width:576px) {
+                padding: 20px;
+
+                h1 {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
         }
     }
 }
@@ -341,9 +413,15 @@
     width: 100%;
     height: max-content;
     background-color: #F4F7FA;
-    padding-top: 100px;
     display: flex;
     justify-content: center;
+    padding-top: 25px;
+
+    h2 {
+        @media(max-width:768px) {
+            font-size: 24px;
+        }
+    }
 
     h6 {
         text-align: center;
@@ -369,8 +447,28 @@
             grid-template-columns: 50% 50%;
             width: 100%;
             padding: 75px 0;
-
             border-bottom: 2px solid #E7E9ED;
+
+            @media(max-width:768px) {
+                display: block;
+                width: 85%;
+                margin: auto;
+                border: none;
+
+                p {
+                    display: none;
+                }
+
+                h5 {
+                    font-size: 20px;
+
+                }
+
+                >* {
+                    border-bottom: 2px solid #E7E9ED;
+
+                }
+            }
 
         }
     }

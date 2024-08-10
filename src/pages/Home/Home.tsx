@@ -95,7 +95,7 @@ export default function Home() {
                     </div>
                 </div>
             
-            {/* <FadeOnScroll>
+            <FadeOnScroll>
                 <div className={styles.testimonialWrapper}>
                     <div className={styles.testimonialBox}>
                         <div className={styles.testimonialImg}>
@@ -128,24 +128,31 @@ export default function Home() {
 
                 </div>
             </FadeOnScroll>
-            <FadeOnScroll>
+          
                 <div className={styles.factsWrapper}>
                     <div className={styles.allFactsBox}>
-                        <div className={styles.factBox}>
-                            <span><h1>1M+</h1></span>
-                            <span><p>Customers visit Omega every month to get their service done.</p></span>
-                        </div>
-                        <div className={styles.factBox}>
-                            <span><h1>92%</h1></span>
-                            <span><p>Satisfaction rate comes from our awesome customers.</p></span>
-                        </div>
-                        <div className={styles.factBox}>
-                            <span><h1>4.9/5.0</h1></span>
-                            <span><p>Average customer ratings we have got all over internet.</p></span>
-                        </div>
+                        
+                        <FadeOnScroll>
+                            <div className={styles.factBox}>
+                                <span><h1>1M+</h1></span>
+                                <span><p>Customers visit Omega every month to get their service done.</p></span>
+                            </div>
+                        </FadeOnScroll>
+                        <FadeOnScroll>
+                            <div className={styles.factBox}>
+                                <span><h1>92%</h1></span>
+                                <span><p>Satisfaction rate comes from our awesome customers.</p></span>
+                            </div>
+                        </FadeOnScroll>
+                        <FadeOnScroll>
+                            <div className={styles.factBox}>
+                                <span><h1>4.9/5.0</h1></span>
+                                <span><p>Average customer ratings we have got all over internet.</p></span>
+                            </div>
+                        </FadeOnScroll>
                     </div>
                 </div>
-            </FadeOnScroll>
+         
 
             <div className={styles.featuresWrapper}>
                 <div className={styles.featuresBox}>
@@ -155,14 +162,18 @@ export default function Home() {
                             <h2>People choose us because we serve the best for everyone</h2>
                         </span>
                     </FadeOnScroll>
-                    <FadeOnScroll>
+                   
                         <div className={styles.featuresGroup}>
-                            <FeatureCard heading='Dedicated project manager' srcPath={featuresIcon1}></FeatureCard>
-                            <FeatureCard heading='Organized tasks' srcPath={featuresIcon2}></FeatureCard>
-                            <FeatureCard heading='Easy feedback sharing' srcPath={featuresIcon3}></FeatureCard>
-                            <FeatureCard heading='Never miss deadline' srcPath={featuresIcon4}></FeatureCard>
+                            <FadeOnScroll>
+                                <FeatureCard heading='Dedicated project manager' srcPath={featuresIcon1}></FeatureCard>
+                                <FeatureCard heading='Organized tasks' srcPath={featuresIcon2}></FeatureCard>
+                            </FadeOnScroll>
+                            <FadeOnScroll>
+                                <FeatureCard heading='Easy feedback sharing' srcPath={featuresIcon3}></FeatureCard>
+                                <FeatureCard heading='Never miss deadline' srcPath={featuresIcon4}></FeatureCard>
+                            </FadeOnScroll>
                         </div>
-                    </FadeOnScroll>
+                    
                     <FadeOnScroll><GetStartedComponent /></FadeOnScroll>
                 </div>
             </div>
@@ -205,7 +216,7 @@ export default function Home() {
                     </div>
                 </div>
             </FadeOnScroll>
-            <Footer></Footer> */}
+            <Footer></Footer>
 
 
         </>
