@@ -53,10 +53,14 @@ export default function Home() {
                 <Header></Header>
                 <div className={styles.heroBox}>
                     <div className={styles.heroText}>
-                        <h6>LET'S SHIFT YOUR BUSINESS</h6>
-                        <h1>Shift your business fast with Shade Pro.</h1>
-                        <p>With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
-                        <PrimaryBtn padding={20}>Get started a project</PrimaryBtn>
+                        <div>
+                            <h6>LET'S SHIFT YOUR BUSINESS</h6>
+                            <h1>Shift your business fast with Shade Pro.</h1>
+                        </div>
+                        <div>
+                            <p>With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+                            <PrimaryBtn padding={20}>Get started a project</PrimaryBtn>
+                        </div>
                     </div>
                     <div className={styles.heroImg}>
                         <img src={heroImg} alt="Smiling face" />
@@ -69,7 +73,7 @@ export default function Home() {
                 </div>
             </div>
            
-                <div className={styles.servicesWrapper}>
+                {/* <div className={styles.servicesWrapper}>
                     <div className={styles.servicesBox}>
                         <h6>OUR SERVICES</h6>
                         <h3>We provide great services for our <br /> customers based on needs</h3>
@@ -200,7 +204,7 @@ export default function Home() {
                     </div>
                 </div>
             </FadeOnScroll>
-            <Footer></Footer>
+            <Footer></Footer> */}
 
 
         </>
